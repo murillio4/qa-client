@@ -1,0 +1,28 @@
+@mixin display {
+    display: -webkit-flex;
+    display: flex;
+}
+
+@mixin flow {
+    -webkit-flex-flow: row nowrap;
+    flex-flow: row nowrap;
+}
+
+@mixin content {
+    -webkit-justify-content: space-between;
+    justify-content: space-between;
+}
+
+@mixin align {
+    -webkit-align-items: center;
+    align-items: center;
+}
+
+@mixin header_hoover {
+    &:hover {
+        background-color: $navigation-hover-bg;
+        color: $text-color;
+        text-decoration: none;
+        outline: none;
+    }
+}
